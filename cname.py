@@ -1,5 +1,9 @@
 import requests, os, sys, random
-
+'''
+This is just a simple url shortener that creates a DNS CNAME record using your cloudflare domain
+to the site that you send it. URL will pe passed to you and should be preceeded with a 5 digit
+interger. 
+'''
 from routes import redirect_to
 #Vars file includes API Tokens
 if os.path.exists("cloudflare_vars.py"):
